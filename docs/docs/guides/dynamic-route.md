@@ -52,3 +52,10 @@ export function NavigationProvider({
 ```
 
 On the Next.js side, you should have a file at `apps/next/pages/users/[id].tsx` that exports the same screen.
+
+:::tip Recursive Routes
+
+In order to support recursively navigating to the same screen with different params you'll need to implement [React Navigation's getId](https://reactnavigation.org/docs/screen/#getid) attribute in your navigator.
+
+:::
+
